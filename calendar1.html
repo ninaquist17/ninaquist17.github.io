@@ -267,6 +267,9 @@ function calendari(widget, data)
         fila.innerHTML += '<th>' + dies_abr[i] + '</th>';
     }
 
+	fila.innerHTML += '<th>' + dies_abr[0] + '</th>';
+    e.appendChild(fila);
+
     /* Obtinc el dia que va acabar el mes anterior */
     var inici_mes =
         new Date(data.getFullYear(), data.getMonth(), -1).getDay();
