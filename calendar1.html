@@ -263,9 +263,9 @@ function calendari(widget, data)
 
     fila = document.createElement('tr');
 
-    for(var i = 1; i < 7; i++)
+    for(var i = 1; i < 7; i+)
     {
-        fila.innerHTML += '<th>' + dies_abr[0] + '</th>';
+        fila.innerHTML += '<th>' + dies_abr[i] + '</th>';
     }
 
     fila.innerHTML += '<th>' + dies_abr[0] + '</th>';
